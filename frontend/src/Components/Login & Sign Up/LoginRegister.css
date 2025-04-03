@@ -97,7 +97,7 @@ form {
 .button {
   width: 100%;
   height: 48px;
-  background: #7494ec;
+  background: #3A6D8C;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: none;
@@ -140,7 +140,7 @@ form {
   left: -250%;
   width: 300%;
   height: 100%;
-  background: #7494ec;
+  background: #3A6D8C;
   border-radius: 150px;
   z-index: 2;
   transition: 1.8s ease-in-out;
@@ -203,15 +203,19 @@ form {
 .alert {
   display: flex;
   align-items: center;
-  background: #ffe6e6; /* Light red background */
-  color: #d32f2f; /* Dark red text */
+  background: #ffe6e6;
+  /* Light red background */
+  color: #d32f2f;
+  /* Dark red text */
   font-size: 12px;
   padding: 8px;
   border-radius: 4px;
-  border-left: 4px solid #d32f2f; /* Red left border */
+  border-left: 4px solid #d32f2f;
+  /* Red left border */
   margin-top: 5px;
   width: 100%;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* Slight shadow for depth */
 }
 
 

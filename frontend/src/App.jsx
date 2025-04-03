@@ -22,6 +22,13 @@ import ProductDetail from "./Components/Product/ProductDetail";
 import UserManagement from "./Components/User/UserManagement ";
 import AppProvider from "./Context/AppContext";
 import "remixicon/fonts/remixicon.css";
+import Food from "./Components/Food/Food";
+import Calculator from "./Components/CalorieCalculator/Calculator";
+import Store from "./Components/StoreCarte/Store";
+import Detail from "./Components/StoreCarte/Detail";
+// import { Carte } from "./Components/Carte/Carte";
+// import Carte from "./Components/Carte/Carte";
+// import Carte from "./Components/Carte/Carte";
 
 const NotFoundPage = () => (
   <div className="flex justify-center items-center h-screen">
@@ -124,7 +131,7 @@ export default function App() {
 
         {/* Client Routes */}
         <Route
-          path="/client/dashboard"
+          path="/client-dashboard"
           element={
             <ProtectedRoute requiredRole="client">
               <ClientDashboard />
@@ -132,7 +139,7 @@ export default function App() {
           }
         />
         <Route
-          path="/client/exercises"
+          path="/client-exercises"
           element={
             <ProtectedRoute requiredRole="client">
               <ClientExerciseList />
@@ -140,7 +147,7 @@ export default function App() {
           }
         />
         <Route
-          path="/client/exercises/:id"
+          path="/client-exercises/:id"
           element={
             <ProtectedRoute requiredRole="client">
               <ExerciseDetail />
@@ -150,7 +157,7 @@ export default function App() {
 
         {/* Client Product Routes */}
         <Route
-          path="/client/products"
+          path="/client-products"
           element={
             <ProtectedRoute requiredRole="client">
               <ClientProductList />
@@ -158,7 +165,7 @@ export default function App() {
           }
         />
         <Route
-          path="/client/products/:id"
+          path="/client-products/:id"
           element={
             <ProtectedRoute requiredRole="client">
               <ProductDetail />
@@ -166,6 +173,21 @@ export default function App() {
           }
         />
 
+        {/************************** Client Food Routes ****************************/}
+        <Route path="/client-food" element={<Food />} />
+
+        {/*********************  Client Calculator Calories Routes ***********************/}
+        <Route path="/client-calculate" element={<Calculator />} />
+
+        {/************************** Store *********************************/}
+        <Route path="/store-products" element={<Store />} />
+
+        {/****************************** Add To Carte **********************************/}
+        {/* <Route path="/add-to-carte" element={<Carte />} /> */}
+
+
+        {/*********************** Detail Product ********************/}
+        <Route path="/store-products/:slug" element={<Detail />} />
         {/* Fallback Route for Unmatched Paths */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

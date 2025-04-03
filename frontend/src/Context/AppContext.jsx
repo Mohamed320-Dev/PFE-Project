@@ -11,38 +11,38 @@ export default function AppProvider({ children }) {
 
   async function getUser() {
     if (!token) return;
-    
+
     setLoading(true);
     setError(null);
-    
+
     try {
-      console.log("Fetching user data with token");
+      // console.log("Fetching user data with token");
       const res = await fetch("/api/user", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
-      
-      console.log("User API response status:", res.status);
-      
+
+      // console.log("User API response status:", res.status);
+
       if (!res.ok) {
         const errorText = await res.text();
-        console.error("Error fetching user data:", errorText);
+        // console.error("Error fetching user data:", errorText);
         throw new Error(`Failed to fetch user data: ${res.status}`);
       }
-      
+
       const data = await res.json();
-      console.log("User data received:", data);
+      // console.log("User data received:", data);
 
       setUser(data);
       setIsAdmin(data.role === 'admin');
     } catch (error) {
-      console.error("Error in getUser:", error);
+      // console.error("Error in getUser:", error);
       setError(error.message);
-      
+
       // Handle invalid token by clearing it
       if (error.message.includes("401")) {
-        console.log("Invalid token detected, clearing token");
+        // console.log("Invalid token detected, clearing token");
         localStorage.removeItem("token");
         setToken(null);
       }
@@ -69,16 +69,16 @@ export default function AppProvider({ children }) {
   };
 
   return (
-    <AppContext.Provider 
-      value={{ 
-        token, 
-        setToken, 
-        user, 
-        setUser, 
-        isAdmin, 
-        loading, 
+    <AppContext.Provider
+      value={{
+        token,
+        setToken,
+        user,
+        setUser,
+        isAdmin,
+        loading,
         error,
-        logout 
+        logout
       }}
     >
       {children}

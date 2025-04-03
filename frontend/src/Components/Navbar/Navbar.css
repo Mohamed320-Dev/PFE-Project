@@ -1,0 +1,513 @@
+.navbar-div {
+    margin-left: 683px;
+}
+
+/* First Link */
+.first-div {
+    position: fixed;
+    width: 240px;
+    background-color: #3A6D8C;
+    height: 641px;
+    margin-left: -683px;
+    margin-top: 0px;
+}
+
+.first-div ul {
+    position: absolute;
+    display: grid;
+    row-gap: 35px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.link-nav {
+    color: white;
+    font-family: "Mona Sans", sans-serif;
+    list-style: none;
+    font-size: 14px;
+}
+
+.link-0 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -22px;
+    box-shadow: inset 0 -1px rgb(210, 211, 211);
+}
+
+.icon-menu {
+    font-size: 17px;
+    margin-left: -6px;
+}
+
+.icon-menu i {
+    margin-left: -55px;
+    color: gray;
+    width: 2px;
+    cursor: pointer;
+}
+
+.text-title {
+    width: 210px;
+    font-family: "Mona Sans", sans-serif;
+    cursor: pointer;
+    margin-left: -8px;
+    margin-top: -5px;
+
+}
+
+/* Second Link */
+.link-1 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-1:hover {
+    background: #5c7ae0;
+}
+
+/* *************** Color if clicked ******************** */
+.link-nav {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.link-nav.active {
+    background: #6A9AB0 !important;
+    color: white !important;
+    border-left: 2px solid #EAD8B1;
+}
+
+
+/* ******************* */
+
+.link-1 .icon-accueil {
+    color: rgb(210, 211, 211);
+    margin-right: 10px;
+    font-size: 22px;
+    margin-left: 12px;
+    margin-top: -2px;
+}
+
+.link-1 i {
+    font-size: 26px;
+}
+
+.text-accueil {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.link-1 a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/******************** Link Orders ********************/
+.link-2 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+    outline: none;
+    /* Optional: remove default outline */
+}
+
+.link-2:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+/* 
+.link-2:focus {
+    background: red;
+} */
+
+.icon-box {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -37px;
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+.text-order {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Mona-Sans", sans-serif;
+    margin-left: 19px;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+}
+
+
+/********************** Link Products ***********************/
+.link-3 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-3:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-product {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -104px;
+    font-size: 22px;
+    margin-top: -3px;
+}
+
+.text-product {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 15px;
+}
+
+/***************** Link Sells *****************/
+.link-4 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-4:hover {
+    background: #5c7ae0;
+    margin-left: -60px;
+}
+
+.icon-sell {
+    margin-top: -3px;
+    color: #9aa4b2;
+    margin-left: -100px;
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.text-sell {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+
+/******************* Link Coupons ********************/
+.link-5 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-5:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-coupon {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -6px;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+.text-coupon {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 34px;
+    margin-top: -28px;
+}
+
+
+
+/******************** Link Store *********************/
+.link-6 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-6:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-store {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -72px;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.text-store {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+/* Eight Link */
+.link-7 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-7:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-insight {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -27px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.text-insight {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+/* Nine Link */
+.link-8 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-8:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-invoice {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -72px;
+    font-size: 18px;
+    margin-top: -3px;
+}
+
+.text-invoice {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+/* Ten Link */
+.link-9 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-9:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-grid {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -107px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.text-grid {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+/* Eliven Link */
+.link-10 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-10:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-share {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -80px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.text-share {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+/* Twelve Link */
+.link-11 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-11:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-support {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -77px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.text-support {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}
+
+/* Therteen Link */
+.link-12 {
+    background: #3A6D8C;
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.link-12:hover {
+    background: #5c7ae0;
+    margin-left: -20px;
+}
+
+.icon-seting {
+    margin-top: -3px;
+    color: rgb(210, 211, 211);
+    margin-left: -75px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.text-seting {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi,
+        sans-serif;
+    margin-left: 18px;
+}

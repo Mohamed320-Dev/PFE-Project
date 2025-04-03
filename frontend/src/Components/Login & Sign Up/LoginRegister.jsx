@@ -58,7 +58,7 @@ const LoginRegister = () => {
 
       if (data.errors) {
         setLoginErrors(data.errors);
-        toast.error("Login failed. Please check your credentials.");
+        toast.error("Invalid email or password!");
       } else {
         localStorage.setItem("token", data.token);
         setToken(data.token);
@@ -69,9 +69,9 @@ const LoginRegister = () => {
           if (data.user && data.user.role === "admin") {
             navigate("/admin/dashboard");
           } else {
-            navigate("/client/dashboard");
+            navigate("/client-dashboard");
           }
-        }, 100);
+        }, 1500);
       }
     } catch (error) {
       console.error("Login error:", error);
@@ -102,13 +102,14 @@ const LoginRegister = () => {
       });
       const data = await res.json();
       if (data.errors) {
-        setRegisterErrors(data.errors);
         toast.error("Registration failed. Please check the form.");
       } else {
         localStorage.setItem("token", data.token);
         setToken(data.token);
-        toast.success("Registration successful!");
-        navigate("/");
+        toast.success("User registered successfully!");
+        setTimeout(() => {
+          navigate("/client/dashboard");
+        }, 1500)
       }
     } catch (error) {
       console.error("Registration error:", error);
@@ -117,11 +118,7 @@ const LoginRegister = () => {
         const errorMessage =
           error.response.data.errors?.email?.[0] || "Email already exists!";
         toast.error(errorMessage);
-        setRegisterErrors({ email: [errorMessage] });
       } else {
-        setRegisterErrors({
-          general: ["An error occurred during registration."],
-        });
         toast.error("An error occurred during registration.");
       }
     } finally {
@@ -146,15 +143,11 @@ const LoginRegister = () => {
           <div className="forbox login">
             <form onSubmit={handleLogin}>
               <h1>Login</h1>
-              {loginErrors.general && (
-                <p className="error">{loginErrors.general[0]}</p>
-              )}
 
               <div className="inpbox">
                 <input
                   type="text"
                   placeholder="Email"
-                  required
                   value={loginData.email}
                   onChange={(e) =>
                     setLoginData({ ...loginData, email: e.target.value })
@@ -162,15 +155,11 @@ const LoginRegister = () => {
                 />
                 <i className="bx bxs-envelope"></i>
               </div>
-              {loginErrors.email && (
-                <p className="error">{loginErrors.email[0]}</p>
-              )}
 
               <div className="inpbox">
                 <input
                   type={showPassword ? "text" : "password"} // Toggle input type
                   placeholder="Password"
-                  required
                   value={loginData.password}
                   onChange={(e) =>
                     setLoginData({ ...loginData, password: e.target.value })
@@ -183,9 +172,6 @@ const LoginRegister = () => {
                   style={{ cursor: "pointer" }}
                 ></i>
               </div>
-              {loginErrors.password && (
-                <p className="error">{loginErrors.password[0]}</p>
-              )}
 
               <div className="forgot-link">
                 <a href="#">Forgot password ?</a>
@@ -225,7 +211,6 @@ const LoginRegister = () => {
                 <input
                   type="text"
                   placeholder="Username"
-                  required
                   value={registerData.name}
                   onChange={(e) =>
                     setRegisterData({ ...registerData, name: e.target.value })
@@ -233,15 +218,14 @@ const LoginRegister = () => {
                 />
                 <i className="bx bxs-user"></i>
               </div>
-              {registerErrors.name && (
+              {/* {registerErrors.name && (
                 <p className="error">{registerErrors.name[0]}</p>
-              )}
+              )} */}
 
               <div className="inpbox">
                 <input
                   type="email"
                   placeholder="Email"
-                  required
                   value={registerData.email}
                   onChange={(e) =>
                     setRegisterData({ ...registerData, email: e.target.value })
@@ -249,14 +233,13 @@ const LoginRegister = () => {
                 />
                 <i className="bx bxs-envelope"></i>
               </div>
-              {registerErrors.email && (
+              {/* {registerErrors.email && (
                 <p className="error">{registerErrors.email[0]}</p>
-              )}
+              )} */}
               <div className="inpbox">
                 <input
                   type={showPassword ? "text" : "password"} // Toggle input type
                   placeholder="Password"
-                  required
                   value={registerData.password}
                   onChange={(e) =>
                     setRegisterData({
@@ -272,15 +255,14 @@ const LoginRegister = () => {
                   style={{ cursor: "pointer" }}
                 ></i>
               </div>
-              {registerErrors.password && (
+              {/* {registerErrors.password && (
                 <p className="error">{registerErrors.password[0]}</p>
-              )}
+              )} */}
 
               <div className="inpbox">
                 <input
                   type={showPassword ? "text" : "password"} // Toggle input type
                   placeholder="Confirm Password"
-                  required
                   value={registerData.password_confirmation}
                   onChange={(e) =>
                     setRegisterData({

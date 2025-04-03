@@ -1,4 +1,39 @@
 /* src/Components/Dashboard/Dashboard.css */
+.client-div {
+  position: absolute;
+  margin-top: -321px;
+  margin-left: 240px;
+}
+
+.header-d {
+  margin-top: 320px;
+  height: 72px;
+}
+
+.ul-links {
+  display: flex;
+  align-items: center;
+}
+
+.ul-links ul {
+  list-style: none;
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 70px;
+  font-weight: bold;
+}
+
+.ul-links ul li a {
+  color: white;
+  font-family: Mona-Sans, -apple-system, BlinkMacSystemFont, Lato, DroidKuffi, sans-serif;
+}
+
+.ul-links ul li a:hover {
+  color: #7494ec;
+}
+
+
 .admin-dashboard,
 .client-dashboard {
   font-family: "Poppins", sans-serif;
@@ -148,4 +183,51 @@
 /* Client specific styling */
 .client-dashboard .stat-card {
   border-top: 4px solid #6cc070;
+}
+
+.result-profile-first {
+  margin-top: 9px;
+  margin-left: 903px;
+  position: absolute;
+  width: 180px;
+  height: 230px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 6px -1px #1219261a, 0 2px 4px -2px #1219261a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.d-logout-first {
+  position: relative;
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  z-index: 1000;
+  margin-left: -60px;
+}
+
+.d-logout:hover {
+  transform: translateX(0px);
+}
+
+.d-logout-first .bi {
+  font-size: 18px;
+  margin-left: 55px;
+}
+
+.d-logout-first p {
+  margin-left: 12px;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.text-name {
+  font-size: 14px;
+  position: absolute;
+  margin-top: 5px;
 }

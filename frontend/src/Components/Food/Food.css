@@ -1,0 +1,127 @@
+.vegitbales-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 52px;
+    margin-top: 72px;
+    margin-left: 240px;
+    width: 1111px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.d-vegitbales {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+}
+
+.d-vegitbales:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3),
+        0 6px 20px rgba(0, 51, 153, 0.4);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.veg-image {
+    width: 151px;
+    height: 159px;
+    border-radius: 8px;
+}
+
+.name-product {
+    font-size: 15px;
+    margin-left: -85px;
+    margin-top: 22px;
+}
+
+.weight-product {
+    font-size: 15px;
+    margin-top: -23px;
+    margin-left: 110px;
+}
+
+.input-value {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 75px;
+    padding: 0px 5px;
+    margin-left: -90px;
+    font-size: 8px;
+    height: 17px;
+    margin-top: 25px;
+}
+
+.number-calories {
+    font-size: 12px;
+    margin-left: 86px;
+    margin-top: -17px;
+}
+
+.category-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 40px 0 20px;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.d-show-outline {
+    margin-top: -16px;
+    margin-left: 186px;
+    font-size: 14px;
+}
+
+.text-result-yet {
+    margin-left: 430px;
+    margin-top: 135px;
+    position: absolute;
+}
+
+.search-input {
+    border: 1px solid rgb(192, 191, 191);
+    height: 40px;
+    border-radius: 5px;
+    width: 300px;
+    padding: 0 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-left: 350px;
+    margin-bottom: -15px;
+    margin-top: -25px;
+}
+
+/* Add a stronger shadow when the input is focused */
+.search-input:focus {
+    outline: none;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.d-number-result {
+    margin-top: 25px;
+    margin-left: 7px;
+}

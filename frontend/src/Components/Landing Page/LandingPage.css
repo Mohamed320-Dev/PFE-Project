@@ -24,8 +24,9 @@
 }
 
 .header {
-  width: 100%; /* Changed from fixed width 1519px to 100% */
+  width: 100%;
 }
+
 .dashboard-btn {
   background: none;
   border: none;
@@ -39,6 +40,7 @@
 .dashboard-btn:hover {
   background-color: #f5f5f5;
 }
+
 .section__header {
   position: relative;
   padding-bottom: 0.5rem;
@@ -83,8 +85,8 @@
 img {
   display: flex;
   width: 100%;
-  max-width: 100%; /* Added for better responsiveness */
-  height: auto; /* Added for better responsiveness */
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -168,7 +170,7 @@ nav {
 .nav__menu__btn {
   font-size: 1.5rem;
   color: var(--text-dark);
-  cursor: pointer; /* Added for better UX */
+  cursor: pointer;
 }
 
 .header__container {
@@ -437,9 +439,8 @@ nav {
   padding-inline: 2rem;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Changed from fixed width 468px to 100% */
-  max-width: 468px; /* Added max-width instead */
-  margin: 0 auto; /* Center the card */
+  width: 500px;
+  margin: 0 auto;
 }
 
 .client__card img {
@@ -587,28 +588,28 @@ nav {
   .section__header {
     font-size: 1.8rem;
   }
-  
+
   .header__content h4 {
     font-size: 1.8rem;
   }
-  
+
   .header__content .section__header {
     font-size: 2.5rem;
   }
-  
+
   .about__card {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .swiper-slide {
     padding-top: 5rem;
   }
-  
+
   .client__card {
     padding: 3rem 1rem 1.5rem;
   }
-  
+
   .client__card img {
     left: 50%;
     transform: translate(-50%, -50%);

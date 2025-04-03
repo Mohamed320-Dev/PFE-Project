@@ -1,0 +1,92 @@
+.header-body {
+    background-color: #001F3F;
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 240px;
+    position: absolute;
+    width: 1111px;
+    margin-top: 0px;
+    height: 72px;
+}
+
+.header-body ul {
+    display: flex;
+    gap: 50px;
+    font-weight: 600;
+
+    margin: 0 70px;
+}
+
+.header-body ul li:hover {
+    color: #7494ec;
+}
+
+.icon-profile {
+    position: absolute;
+    border: 1px solid rgb(198, 194, 194);
+    margin-left: 1020px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi {
+    font-size: 23px;
+}
+
+.result-profile {
+    margin-left: 1135px;
+    position: absolute;
+    width: 180px;
+    margin-top: -222px;
+    height: 230px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 6px -1px #1219261a, 0 2px 4px -2px #1219261a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/************* Logout ***************/
+.d-logout {
+    position: relative;
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    z-index: 1000;
+    margin-left: -60px;
+}
+
+.d-logout:hover {
+    transform: translateX(0px);
+}
+
+.d-logout a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.d-logout .bi {
+    font-size: 18px;
+    margin-left: -2px;
+}
+
+.d-logout p {
+    margin-left: 12px;
+    font-size: 13px;
+    margin-top: 3px;
+}
